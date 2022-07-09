@@ -72,7 +72,7 @@ class Operations{
 
     updateDisplay(){
 
-        this.currentValue.innerText = this.this.checkDigits(this.currentValueOperand)
+        this.currentValue.innerText = this.checkDigits(this.currentValueOperand)
       
 
     }
