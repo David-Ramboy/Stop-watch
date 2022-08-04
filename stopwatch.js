@@ -34,6 +34,7 @@ function increaseSeconds(){
         }
         increaseMinutes(secondAtTens)
 
+
     }
 
     function increaseMinutes(secondAtTens){
