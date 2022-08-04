@@ -75,17 +75,44 @@ function increaseSeconds(){
             }
         }
     }
-
-    
-
-
 }
+let startClock;
 
 start.addEventListener("click",() => {
-    setInterval(increaseSeconds,1000)
-})
+    
+    clearInterval(startClock)
 
-console.log(true)
+    startClock = setInterval(increaseSeconds,1000)
+  
+    resetUI()
+   
+})
+stop.addEventListener('click',() => {
+    clearInterval(startClock)
+    resetUI()
+    console.log(true)
+    console.log(second)
+
+})
+function resetUI(){
+    reset.addEventListener('click',() => {
+        second = 0
+        secondAtTens = 0
+        minute = 0
+        minutesAtTens = 0
+        hour = 0
+        hourAtTens = 0
+
+        secondOnes.textContent = second
+        secondTens.textContent = secondAtTens
+        minuteOnes.textContent = minute
+        minuteTens.textContent = minutesAtTens
+        hourOnes.textContent = hour
+        hourTens.textContent = hourAtTens
+    })
+}
+
+
 // setInterval(()=>{num++
 //     console.log(num)
 // },1000)
