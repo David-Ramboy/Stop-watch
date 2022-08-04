@@ -84,7 +84,7 @@ start.addEventListener("click",() => {
     setInterval(increaseSeconds,1000)
 })
 
-
+console.log(true)
 // setInterval(()=>{num++
 //     console.log(num)
 // },1000)
